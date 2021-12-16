@@ -1,0 +1,36 @@
+[
+	{	
+		"$type":	"occ/trail",
+		"$refId":	"TrailTest1",
+		"name": 	"TrailTest1",
+		"$action": 	"lookup",
+		"status": 	"ACTIVE",
+		"type": 	"Ring Section",
+		"bandWidth": 	"DS0",
+		"assignmentType": 	"PREDEFINED_AUTO",
+		"protectionType": 	"SHARED"
+	},
+	{
+		"$type": "occ/trailElemGrp",
+		"$refId": "PARALLEL_GROUP",
+		"$action": "lookup",
+		"name": "Parallel group 1",
+		"$trailOfElement": 
+		[
+			"TrailTest1"
+		]
+	},
+	{	
+		"$type":	"occ/trail",
+		"$refId":	"TrailTest1",
+		"name": 	"TrailTest1",
+		"$action": 	"processAssociations",
+		"$elementsOfTrail": [
+			{
+				"$refId" : "PARALLEL_GROUP",
+				"$action" : "delete"
+			}
+			
+		]
+	}
+]
