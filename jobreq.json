@@ -6,7 +6,7 @@
 		"$action": 	"lookup",
 		"status": 	"ACTIVE",
 		"type": 	"Ring Section",
-		"bandWidth": 	"DS0",
+		"bandWidth": 	"DS1",
 		"assignmentType": 	"PREDEFINED_AUTO",
 		"protectionType": 	"SHARED"
 	},
